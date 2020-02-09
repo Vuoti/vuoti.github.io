@@ -1,180 +1,604 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
-	<title>Minimal Resume Template</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>André Fritzinger | Digital product designer</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
 
-	<div class="container">
-		<div class="hero">
-			<h1 class="name"><strong>Abbie</strong> Bradley</h1>
-			<span class="job-title">Developer</span>
-			<span class="email">abbie.bradley@gmail.com</span>
-
-			<h2 class="lead">Development and design of web applications 
-for startups and large companies</h2>
-		</div>
-	</div>
-
-<!-- Skills and intrest section -->
-	<div class="container">
-
-		<div class="sections">
-			<h2 class="section-title">Skills</h2>
-
-			<div class="list-card">
-				<span class="exp">+ 5 years</span>
-				<div>
-					<h3>Object programming & frameworks</h3>
-					<span>PHP, Symfony, Laravel, Silex, …</span>
-				</div>
-			</div>
-			
-			<div class="list-card">
-				<span class="exp">+ 3 years</span>
-				<div>
-					<h3>Design integration</h3>
-					<span>Style and tools, JS Frameworks</span>
-				</div>
-			</div>	
-					
-			<div class="list-card">
-				<span class="exp">+ 6 years</span>
-				<div>
-					<h3>Linux</h3>
-					<span>Scripting, Servers management and protocols, Automation</span>
-				</div>
-			</div>
+<body id="top">
 
 
-		</div>
-		<div class="sections">
-				<h2 class="section-title">Interests</h2>
-				
-				<div class="list-card">
-					<div>
-						<h3>Scripting languages</h3>
-						<span>PHP, JS, Bash, Python</span>
-					</div>
-				</div>	
-
-				<div class="list-card">
-					<div>
-						<h3>Hacking</h3>
-						<span>Linux, Crawlers, Bots, Network</span>
-					</div>
-				</div>		
-		</div>
-	</div>
-
-	<!-- Achievements -->
-
-	<div class="container cards">
-		
-		<div class="card">
-			<div class="skill-level">
-				<span>+</span>
-				<h2>60</h2>
-			</div>
-
-			<div class="skill-meta">
-				<h3>Projects</h3>
-				<span>Adapting and creating solutions for customer's needs</span>
-			</div>
-		</div>
-
-			
-		<div class="card">
-			<div class="skill-level">
-				<h2>50</h2>
-				<span>%</span>
-			</div>
-
-			<div class="skill-meta">
-				<h3>Web</h3>
-				<span>Applications development integrating third-party services and mobile client(s)</span>
-			</div>
-		</div>
-
-			
-		<div class="card">
-			<div class="skill-level">
-				<h2>30</h2>
-				<span>%</span>
-			</div>
-
-			<div class="skill-meta">
-				<h3>Technical solutions</h3>
-				<span>Such as web services, scripts, configurations</span>
-			</div>
-		</div>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
 
-		<div class="card">
-			<div class="skill-level">
-				<h2>20</h2>
-				<span>%</span>
-			</div>
+    <!-- header
+    ================================================== -->
+    <!--
+    <header class="s-header">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
 
-			<div class="skill-meta">
-				<h3>Leading</h3>
-				<span>Web projects and ensure the quality of delivery</span>
-			</div>
-		</div>
+        <div class="header-content">
 
-	</div>
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                    <li><a class="smoothscroll" href="#services" title="Services">Services</a></li>
+                    <li><a class="smoothscroll" href="#portfolio" title="Works">Works</a></li>
+                    <li><a href="mailto:#0" title="Contact us">Say Hello</a></li>
+                </ul>
+            </nav>
 
-	<!-- Timeeline -->
+            <a href="#0" class="btn btn--stroke btn--small">Download CV</a>
 
-	<div class="container">
-		<ol class="timeline">
-		  <li>
-		    <p class="line">Experiences</p>
-		    <span class="point"></span>
-		    <p class="description">
-		      Lead Developer @Geronimo
-		    </p>
-		    <span class="date">Today - Apr. 2016</span>
-		  </li>
+        </div>
 
-		  <li>
-		    <span class="point"></span>
-		    <p class="description">
-		      Freelance
-		    </p>
-		    <span class="date">Apr. 2016 - Sep. 2015</span>
-		  </li>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+    -->
 
-		  		  <li>
-		    <p class="line">Education</p>
-		    <span class="point"></span>
-		    <p class="description">
-		      DUT "Métiers du multimédia et de l'internet"
-		    </p>
-		    <span class="date">2015 - 2013</span>
-		  </li>
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/0_1.jpg" data-natural-width=708 data-natural-height=327 data-position-y=center>
 
-		  		  <li>
-		    <span class="point"></span>
-		    <p class="description">
-		      Art & Design studies
-		    </p>
-		    <span class="date">2013 - 2008</span>
-		  </li>
-		</ol>
+        <div class="row hero-content">
 
-	</div>
+            <div class="column large-full">
+                <h1>
+                  <span>Hej, I'm André</span> <br>
+                </h1>
+                <h2>
+                  <span>digital product designer</span> <br>
+                  with theoretical knowledge and practical experience in developing interactive systems through user-centric research and prototyping
+                </h2>
+            </div>
 
+        </div> <!-- end hero-content -->
 
-	<br><br>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+            </a>
+        </div> <!-- end hero-scroll -->
+
+    </section> <!-- end s-hero -->
 
 
-	<footer class="container">
-		<span style="font-size: 16px; margin-top: ">Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>
-	</footer>
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
 
+        <div class="s-about__section s-about__section--profile">
+
+            <div class="right-vert-line"></div>
+
+            <div class="row">
+                <div class="column large-6 medium-8 tab-full">
+
+                    <div class="section-intro" data-num="01" data-aos="fade-up">
+                        <h3 class="subhead">Design that does good</h3>
+                        <h1 class="display-1">I want to be part of those who are shaping our future through the meaningfull use of technology.</h1>
+                    </div>
+
+                    <div class="profile-pic" data-aos="fade-up">
+                        <img src="images/profile-pic.jpg"
+                             srcset="images/profile-pic.jpg 1x, images/profile-pic@2x.jpg 2x" alt="">
+                    </div>
+
+                    <h3 data-aos="fade-up">Profile</h3>
+
+                    <p data-aos="fade-up">
+                    In consectetuer turpis ut velit. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis
+                    mi consectetuer lacinia. Fusce neque. Curabitur nisi. Suspendisse nisl elit, rhoncus eget, elementum ac,
+                    condimentum eget, diam. Phasellus magna. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis,
+                    ipsum. Maecenas egestas arcu quis ligula mattis placerat. Suspendisse pulvinar, augue ac venenatis condimentum,
+                    sem libero volutpat nibh, nec pellentesque velit pede quis nunc.
+                    </p>
+
+                </div>
+            </div>
+
+        </div> <!-- end s-about__section--profile -->
+
+        <div class="s-about__section">
+
+            <div class="row">
+                <div class="column">
+                    <h3 data-aos="fade-up">Career</h3>
+                </div>
+            </div>
+
+
+            <div class="row block-large-1-2 block-900-full work-positions">
+
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co"><a href="https://global.honda/" target="_blank">Honda R&D</a></span>
+                                <span class="position__pos">Project Researcher</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Feb 2019 - Present <span> Fulltime</span>
+                            </div>
+                            <div class="position__timeframe">
+                                Jul 2017 - Feb 2019 <span> working student</span>
+                            </div>
+                        </div>
+
+                        <p>
+                          I'm currently working at the intersection of digital and tangible technologies that enrich lives and make the world more fun to move around in.
+                          With insights from qualitative and quantitative user research I contribute to product and company strategy.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co"><a href="https://imd.mediencampus.h-da.de/" target="_blank">Bachelor of arts</a></span>
+                                <span class="position__pos">Interactive Media Design</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Oct 2015 - Feb 2019
+                            </div>
+                            <div class="position__timeframe">
+                            ⠀
+                            </div>
+                        </div>
+
+                        <p>
+                          During this time I gained a new understanding of design and I am still fascinated by the fact that we as designers have the potential to help people overcome real problems.
+                          The course taught me the design thinking mindset before I learned about the term. <br>
+                          <span class="grade">Final grade: 1,3</span>
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co"><a href="https://www.syzygy.net/" target="_blank">Syzygy</a></span>
+                                <span class="position__pos">Screen Designer</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Oct 2015 - Jul 2017 <span> working student</span>
+                            </div>
+                            <div class="position__timeframe">
+                                Feb 2015 - Oct 2015 <span> Fulltime</span>
+                            </div>
+                        </div>
+
+                        <p>
+                          Visual design of engaging experiences for mobile and web.
+                          There is a great satisfaction in creating beautiful things, but after working some time in this job I realized that my interests are not limited to aesthetics.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co"><a href="https://www.shift.agency" target="_blank">Shift</a></span>
+                                <span class="position__pos">Digital Media Designer</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Aug 2012 - Jan 2015
+                            </div>
+                            <div class="position__timeframe">
+                            ⠀
+                            </div>
+                        </div>
+
+                        <p>
+                          Formal education about visual asthetics and the craftmanship behind digital experiences. <br>
+                          <span class="grade">Final grade: 1,3</span>
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+
+            </div> <!-- work positions -->
+
+        </div> <!-- end s-about__section -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services target-section h-dark-bg">
+
+        <div class="row s-services__content">
+
+            <div class="vert-line"></div>
+
+            <div class="column large-6 s-services__leftcol">
+                <div class="section-intro" data-num="02" data-aos="fade-up">
+                    <h3 class="subhead">Things I do</h3>
+
+                    <h1 class="display-1">
+                    I strive to immerse myself in the world of the user
+                    </h1>
+                </div>
+
+                <p data-aos="fade-up">
+                  Learning together and collaborating to create empathetic solutions that solve genuine problems. <br>
+                  Driven by the passion to find new ways to improve life with modern technology, I am interested in all kinds of interfaces. <br><br>
+
+                  Since I'm always interested in the technical side of things as well, I see myself as an generalist and maker.<br>
+                  Whether with Photoshop or Arduino, be it Unity3D or the lasercutter.. <br>
+                  I love building stuff and seeing an idea come to life.
+                </p>
+            </div> <!-- end  s-services--leftcol -->
+
+            <div class="column large-6">
+                <ul class="services-list" data-aos="fade-up">
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>User Research</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                              Before I start a project, I'd like to understand the topic, the industry and the overall problem. The most effective way is to talk to the users of the system, to observe them and to collect important information for the design process.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Concept creation</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                              After identifying possible touch points and troubles people have with a system, hands-on designing can actually begin. Initial ideas are outlined and brought into a suitable form like wireframes or storyboards.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Visual design</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                              If the concept is perceived as possible solution, I begin to shape and craft interactions and interfaces. I  mainly use Sketch or Photoshop for bringing scribbles and wireframes into life, making them ready for the next step: prototyping.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Prototyping</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                              Prototypes are essential for the design process as they give a realistic feel of the final product. They make a concept alive and seizable. Regardless of the fidelity, prototypes enable us to perform product tests with actual users in order to validate the underlying idea.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Testing</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                              To find out whether the concept is viable and works as envisioned, the prototype can be tested in various usability tests so that learnings and insights can immediately enrich the next iteration.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                </ul> <!-- end services-list -->
+            </div>
+
+        </div> <!-- s-services__content -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-6 medium-8 tab-full">
+                <div class="section-intro" data-num="03" data-aos="fade-up">
+                    <h3 class="subhead">Portfolio</h3>
+                    <h1 class="display-1">
+                        A selection of recent projects I have worked on.
+                    </h1>
+                </div>
+            </div>
+        </div> <!-- s-porfolio__header -->
+
+        <div class="row s-porfolio__list block-large-full block-tab-full collapse">
+
+          <div class="column" data-aos="fade-up">
+              <div class="folio-item">
+                  <div class="folio-item__thumb">
+                      <a class="folio-item__thumb-link" href="images/portfolio/gallery/pacebreaker.jpg" title="Pacebreaker" data-size="1050x700">
+                          <img src="images/portfolio/Pacebreaker.jpg"
+                               srcset="images/portfolio/Pacebraeker.jpg 1x, images/portfolio/Pacebreaker@2x.jpg 2x" alt="" style="width:100%;">
+                      </a>
+                  </div>
+                  <div class="folio-item__info">
+                      <div class="folio-item__cat">Branding</div>
+                      <h4 class="folio-item__title">Windows in The City</h4>
+                  </div>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                  <div class="folio-item__caption">
+                      <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+              </div>
+          </div> <!-- end column -->
+        </div>
+
+        <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-windows-in-the-city.jpg" title="Windows in The City" data-size="1050x700">
+                            <img src="images/portfolio/windows-in-the-city.jpg"
+                                 srcset="images/portfolio/windows-in-the-city.jpg 1x, images/portfolio/windows-in-the-city@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">Windows in The City</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-building-blodcks.jpg" title="Building Blocks" data-size="1050x700">
+                            <img src="images/portfolio/building-blockds.jpg"
+                                 srcset="images/portfolio/building-bdlocks.jpg 1x, images/portfolio/building-blocdks@2x.jpg 2x" alt="">
+                        </a>
+                        <h1>How might we design an enriching environment for animals kept enclosed?</h1>
+                        <p>Providing cognitive stimulation to prevent stereotypical behavior.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shout-jump.jpg" Title="Shout and Jump" data-size="1050x700">
+                            <img src="images/portfolio/shout-and-jump.jpg"
+                                 srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">Shout & Jump</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-sand-dunes.jpg" title="Sand Dunes" data-size="1050x700">
+                            <img src="images/portfolio/sand-dunes.jpg"
+                                 srcset="images/portfolio/sand-dunes.jpg 1x, images/portfolio/sand-dunes@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Frontend Design</div>
+                        <h4 class="folio-item__title">Sand Dunes</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Sand Dunes" data-size="1050x700">
+                            <img src="images/portfolio/woodcraft.jpg"
+                                 srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Product Design</div>
+                        <h4 class="folio-item__title">Wooocraft</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/lamp.jpg"
+                                 srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Product Design</div>
+                        <h4 class="folio-item__title">The Lamp</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+
+        </div> <!-- folio-list -->
+
+    </section> <!-- end portfolio -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer h-dark-bg">
+
+        <div class="right-vert-line"></div>
+
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead">Get In Touch</h3>
+
+                    <h1 class="display-1">
+                    Have an idea or a concept that really excite you?
+                    Let's turn that idea into reality.
+                    </h1>
+                </div>
+
+                <div class="footer-email-us">
+                    <a href="mailto:#0" class="btn btn--primary h-full-width">Say hi</a>
+                </div>
+            </div>
+
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Email
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="mailto:andre[dot]fritzinger@gmail.com">andre<span>.</span>fritzinger@gmail.com</a>
+                        </p>
+                    </div> <!-- end footer-contact-block -->
+                    <!--
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Phone
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="tel:+4917612312312">+49 176 123 123 12</a>
+                        </p>
+                    </div> -->
+                    <!-- end footer-contact-block -->
+                    <br>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            CV
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="tel:+4917612312312">Have a look at my CV</a>
+                        </p> <!-- end footer-contact-block -->
+                    <br>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Social
+                        </h5>
+                        <ul class="footer-contact-block__list">
+                            <li><a href="https://www.linkedin.com/in/andr%C3%A9-fritzinger-8b3640174/">Linkedin</a></li>
+                            <li><a href="https://github.com/Vuoti">Github</a></li>
+                            <li><a href="https://www.instagram.com/andreefpunkt/">Instagram</a></li>
+                            <li><a href="https://twitter.com/andre_efpunkt">Twitter</a></li>
+                        </ul>
+                    </div> <!-- end footer-contact-block -->
+                </div>
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="row s-footer__bottom">
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-</html>
