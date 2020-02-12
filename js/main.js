@@ -151,6 +151,9 @@
                 $curPanel.slideDown();
                 $allItems.removeClass('is-active');
                 $curItem.addClass('is-active');
+            }else if($curItem.hasClass('is-active')){
+                $curPanel.slideUp();
+                $curItem.removeClass('is-active');
             }
 
             return false;
