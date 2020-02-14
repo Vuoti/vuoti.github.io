@@ -3,7 +3,7 @@
 // http://natureofcode.com
 
 // The "Vehicle" class
-
+var colo = 127;
 class Vehicle {
   constructor(x, y) {
     this.acceleration = createVector(0, 0);
@@ -28,6 +28,9 @@ class Vehicle {
   applyForce(force) {
     // We could add mass here if we want A = F / M
     this.acceleration.add(force);
+    if(this.position.y > windowHeight+30){
+      this.position.y = windowHeight+30;
+    }
   }
 
   // A method that calculates a steering force towards a target
@@ -37,9 +40,11 @@ class Vehicle {
     let d = desired.mag();
     // Scale with arbitrary damping within 100 pixels
     if (d < 100) {
+      colo = 0;
       var m = map(d, 0, 100, 0, this.maxspeed);
       desired.setMag(m);
     } else {
+      colo = 127;
       desired.setMag(this.maxspeed);
     }
 
@@ -52,7 +57,7 @@ class Vehicle {
   display() {
     // Draw a triangle rotated in the direction of velocity
     let theta = this.velocity.heading() + PI / 2;
-    fill(127);
+    fill(colo);
     stroke(200);
     strokeWeight(1);
     push();

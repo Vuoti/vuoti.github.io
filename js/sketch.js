@@ -11,7 +11,8 @@
 let v;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  let cnv = createCanvas(windowWidth, windowHeight);
+  cnv.id('paperglider');
   v = new Vehicle(width / 2, height / 2);
 }
 
