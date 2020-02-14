@@ -2082,6 +2082,13 @@ button:hover::before {
 }
 
 @media screen and (max-width:600px) {
+  .cursor{
+    display: none;
+  }
+  .cursor-hero{
+    display: none;
+  }
+
   .header-logo {
     left: 4rem;
   }
@@ -2427,15 +2434,11 @@ html.no-csstransitions .hero-content {
     width: 6rem;
     left: -8.8rem;
   }
-
 }
 
 @media screen and (max-width:1700px) {
   .hero-content {
     max-width: 1200px;
-  }
-  .s-hero{
-    height:90vh !important;
   }
 }
 
@@ -2466,6 +2469,17 @@ html.no-csstransitions .hero-content {
 
 }
 
+@media screen and (min-width:1200px) {
+  #hero h1 span{
+    font-size: 15rem;
+  }
+}
+@media screen and (min-width:1500px) {
+  #hero h1 span{
+    font-size: 20rem;
+  }
+}
+
 @media screen and (max-width:1200px) {
   .hero-scroll {
     right: 6rem;
@@ -2479,6 +2493,12 @@ html.no-csstransitions .hero-content {
     height: 6rem;
     width: 6rem;
   }
+  .cursor{
+    display: none;
+  }
+  canvas{
+    display: none;
+  }
 
 }
 
@@ -2490,7 +2510,6 @@ html.no-csstransitions .hero-content {
   .hero-social {
     font-size: 1.1rem;
   }
-
 }
 
 @media screen and (max-width:800px) {
@@ -3720,4 +3739,12 @@ html.no-csstransitions .hero-content {
   width: 80px;
   height: 80px;
   margin: -40px 0 0 -40px;
+}
+
+canvas{
+  position: absolute;
+  top: 0px;
+  z-index: 100000000000000000;
+  pointer-events: none;
+  mix-blend-mode: normal;
 }
