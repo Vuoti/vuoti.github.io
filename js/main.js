@@ -135,19 +135,21 @@
     * ------------------------------------------------------ */
     const ssAccordion = function() {
 
-        const $allItems = $('.services-list__item');
-        const $allPanels = $allItems.children('.services-list__item-body');
+        const $allItems = $('.list__item');
+        const $allPanels = $allItems.children('.list__item-body');
 
         $allPanels.slice(1).hide();
 
-        $allItems.on('click', '.services-list__item-header', function() {
+        $allItems.on('click', '.list__item-header', function() {
 
             const $this = $(this),
                   $curItem = $this.parent(),
                   $curPanel =  $this.next();
 
             if(!$curItem.hasClass('is-active')){
-                $allPanels.slideUp();
+                if($curItem.hasClass('single')){
+                  $allPanels.slideUp();
+                }
                 $curPanel.slideDown();
                 $allItems.removeClass('is-active');
                 $curItem.addClass('is-active');
