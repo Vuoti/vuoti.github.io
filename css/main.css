@@ -1601,6 +1601,19 @@ button:hover::before {
   top: -.25em;
   left: 4.4rem;
 }
+.section-intro-title {
+  overflow: hidden;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30rem;
+  line-height: 1;
+  letter-spacing: -.045em;
+  color: rgba(0, 0, 0, 0.12);
+  position: absolute !important;
+  top: -1em;
+  left: 4.4rem;
+  margin-top: -100px;
+}
 
 .h-dark-bg {
   color: #ffffff;
@@ -1611,6 +1624,9 @@ button:hover::before {
 }
 
 .h-dark-bg .section-intro::before {
+  color: rgba(255, 255, 255, 0.08);
+}
+.h-dark-bg .section-intro-title {
   color: rgba(255, 255, 255, 0.08);
 }
 
@@ -1657,6 +1673,9 @@ button:hover::before {
   .section-intro::before {
     font-size: 24rem;
   }
+  .section-intro-title {
+    font-size: 24rem;
+  }
 
   .right-vert-line {
     height: 16rem;
@@ -1676,6 +1695,10 @@ button:hover::before {
 
   .section-intro::before {
     font-size: 22rem;
+  }
+  .section-intro-title {
+    font-size: 13rem;
+    margin: -70px 0px 0px -20px;
   }
 
   .right-vert-line {
@@ -1700,6 +1723,10 @@ button:hover::before {
   .section-intro::before {
     font-size: 20rem;
   }
+  .section-intro-title {
+    font-size: 13rem;
+    margin: -70px 0px 0px -20px;
+  }
 
 }
 
@@ -1710,6 +1737,10 @@ button:hover::before {
 
   .section-intro::before {
     font-size: 18rem;
+  }
+  .section-intro-title {
+    font-size: 11rem;
+    margin: -55px 0px 0px -20px;
   }
 
 }

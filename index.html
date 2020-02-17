@@ -114,12 +114,12 @@
 
             <div class="row">
                 <div class="column large-6 medium-8 tab-full">
-                    <!--
-                    <div data-relative-input="true" id="scene">
-                      <div data-depth="0.6">My first Layer!</div>
+
+                    <div data-relative-input="true" id="scene-about" data-aos="fade-up">
+                      <div data-depth="0.6" class="section-intro-title">about</div>
                     </div>
-                  -->
-                    <div class="section-intro" data-num="about" data-aos="fade-up">
+
+                    <div class="section-intro" data-aos="fade-up">
                         <h3 class="subhead">Design that does good</h3>
                         <h1 class="display-1">I want to take part in shaping our future by designing meaningfull technology.</h1>
                     </div>
@@ -293,7 +293,12 @@
             <div class="vert-line"></div>
 
             <div class="column large-6 s-services__leftcol">
-                <div class="section-intro" data-num="skills" data-aos="fade-up">
+
+                <div data-relative-input="true" id="scene-skills" data-aos="fade-up">
+                  <div data-depth="0.6" class="section-intro-title">skills</div>
+                </div>
+
+                <div class="section-intro" data-num="" data-aos="fade-up">
                     <h3 class="subhead">What i can bring to the table</h3>
 
                     <h1 class="display-1">
@@ -381,7 +386,11 @@
             <div class="right-vert-line"></div>
             <div class="row s-portfolio__header">
                 <div class="column large-6 medium-8 tab-full">
-                    <div class="section-intro" data-num="work" data-aos="fade-up">
+                    <div data-relative-input="true" id="scene-work" data-aos="fade-up">
+                      <div data-depth="0.6" class="section-intro-title">work</div>
+                    </div>
+
+                    <div class="section-intro" data-num="" data-aos="fade-up">
                         <h3 class="subhead">Portfolio</h3>
                         <h1 class="display-1">
                             A selection of recent projects I have worked on.
@@ -635,8 +644,12 @@
       $(window).on('mousemove', moveCursor);
       $(window).on('mousedown', clickedCursor);
 
-      var scene = document.getElementById('scene');
-      var parallaxInstance = new Parallax(scene);
+      var sceneAbout = document.getElementById('scene-about');
+      var sceneSkills = document.getElementById('scene-skills');
+      var sceneWork = document.getElementById('scene-work');
+      var parallaxInstance = new Parallax(sceneAbout);
+      var parallaxInstance = new Parallax(sceneSkills);
+      var parallaxInstance = new Parallax(sceneWork);
     </script>
 
 </body>
